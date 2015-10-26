@@ -6,7 +6,7 @@
 makeCacheMatrix <- function(x = numeric()) {
         
         # holds the cached value 
-        # initially nothing is cached so set it to NULL
+        # initially nothing is cached so set to NULL
         cache <- NULL
         
         # stores the matrix
@@ -54,6 +54,6 @@ cacheSolve <- function(z, ...) {
         inverse <- solve(data)
         z$cacheInverse(inverse)
         
-        # return the inverse
+        # returns the inverse
         inverse
 }
